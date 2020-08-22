@@ -45,6 +45,8 @@ spec:
           volumeMounts:
             - name: postgresql-persistent-storage
               mountPath: /var/lib/postgresql/data
+            - name: backup-db
+              mountPath: /backup
           readinessProbe:
             exec:
               command: ["pg_isready"]
@@ -55,3 +57,6 @@ spec:
         - name: postgresql-persistent-storage
           persistentVolumeClaim:
             claimName: postgresql
+        - name: backup-db
+          persistentVolumeClaim:
+            claimName: dataverse-backup
