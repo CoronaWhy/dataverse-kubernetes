@@ -1,0 +1,6 @@
+---
+resources:
+  - mandatory.yaml
+  - deployment.yaml
+  - svc.yaml
+  - ingress.yaml
