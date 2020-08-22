@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
         - name: dataverse
-          image: iqss/dataverse-k8s:5.0
+          image: coronawhy/dataverse-k8s:5.0
           resources:
             requests:
               memory: "4Gi"
