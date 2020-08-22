@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: configure
-          image: iqss/dataverse-k8s
+          image: coronawhy/dataverse-k8s:5.0
           command: ["scripts/config-job.sh"]
           envFrom:
             - configMapRef:
